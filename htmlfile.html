@@ -1,0 +1,156 @@
+<!doctype html >
+<html>
+<head>
+<title>project</title>
+<link rel="stylesheet" href="stylesheet1.css">
+</head>
+<body>
+<nav>
+<ul class="topnav" id ="dropdownclick">
+<li><a href="#home">home</a></li>
+<li><a href="#news">news</a></li>
+<li><a href="#contact">contact</a></li>
+<li><a href="#about">about</a></li>
+<li class="topnav_right"><a href="#sign up">sign up</a></li>
+<li class="topnav_right"><a href="#sign in">sign in</a></li>
+<li class="dropdownicon"><a href="javascript:void(0);" onclick="dropdownmenu()">&#9776;</a></li>
+</ul>
+</nav>
+
+<div class="container" id="section-1-gradient">
+    <div class="row">
+        <div class="col-6">
+            <div class="leftside-col">
+                    <h1 class="large">welcome</h1>
+                    <h1 class="large">to project</h1>
+            </div>
+            
+            <form>
+                <div class="leftside-col"> 
+                    <h2>username</h2>
+                    <input type="text" name="username" placeholder="username">
+                    <h2>password</h2>
+                    <input type="text"  name="password" placeholder="password">
+                </div>
+            </form>
+        </div>
+
+        <div class="col-6">
+            <div class="rightside-col">
+                <div class="videocontainer">
+                    <iframe width="500" height="255" src="https://www.youtube.com/embed/9pnK8akbd2M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>     
+                </div>
+               </div>
+       </div>
+    </div>
+</div>
+<header>
+    <h1 class="section2header">Top Games</h1>
+</header>
+<div class="container">
+    <div class="row">
+        <div class="col-4">
+            <div class="box">
+                <div class="icon">
+                    <img src="https://media.comicbook.com/2018/12/uncharted-1150967.jpeg" height="80" width="100">
+                    </div>
+                <label>Uncharted</label>
+                <p><b>Uncharted is an action-adventure third-person shooter platform video game series developed by Naughty Dog and published by Sony Interactive Entertainment for PlayStation consoles. The main games in the series follow Nathan Drake, a charismatic yet obsessive treasure hunter.</b></p>
+            </div>
+        </div>
+
+        <div class="col-4">
+            <div class="box">
+                <div class="icon">
+                    <img src="https://i.ytimg.com/vi/11l77a0Jxcw/maxresdefault.jpg" height="80" width="100">
+                    </div>
+                <label>Max Payne</label>
+                <p><b>Max Payne 3 is a third-person shooter video game developed by Rockstar Studios and published by Rockstar Games. It was released on May 15, 2012 for the PlayStation 3 and Xbox 360; a Microsoft Windows port was released on May 29, 2012, followed by an OS X port on June 20, 2013</b></p>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="box">
+                <div class="icon">
+                        <img src="https://img.game.co.uk/ml2/5/6/3/8/563894_scr5_a.png" height="80" width="100">
+                    </div>
+                <label>God Of War</label>
+                <p><b>God of War is an action-adventure video game developed by Santa Monica Studio and published by Sony Interactive Entertainment. Released on April 20, 2018, for the PlayStation 4 (PS4) console, it is the eighth installment in the God of War series, the eighth chronologically, and the sequel.</b></p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <button class="more">more</button>
+        </div>
+    </div>
+</div>
+<hr>
+
+<div class="container">
+    <div class="row">
+        <div class="col-7">
+            <article>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+            </article>
+        </div>    
+
+        <div class="col-5">
+            <img src = "https://i.guim.co.uk/img/media/f85310abcd335dcf54b2a5216098faad18ac16b8/84_189_769_462/master/769.jpg?width=700&quality=85&auto=format&fit=max&s=232e6210d393b63025b4b9838ca833af" height="150" width="250">
+        </div>
+    </div>
+</div>
+<footer class="footsy">
+    <div class="row">
+            <div class="col-3 mobilestack">
+                    <h1>Company</h1>
+                    <ul>
+                        <li>about</li>
+                        <li>policy</li>
+                        <li>address</li>
+                    </ul>
+                </div>
+                <div class="col-3 mobilestack">
+                        <h1>Company</h1>
+                        <ul>
+                            <li>about</li>
+                            <li>policy</li>
+                            <li>address</li>
+                        </ul>
+                    </div>
+                    <div class="col-3 mobilestack">
+                            <h1>Company</h1>
+                            <ul>
+                                <li>about</li>
+                                <li>policy</li>
+                                <li>address</li>
+                            </ul>
+                        </div>
+                        <div class="col-3 mobilestack">
+                                <h1>Company</h1>
+                                <ul>
+                                    <li>about</li>
+                                    <li>policy</li>
+                                    <li>address</li>
+                                </ul>
+                            </div>
+    </div>
+</footer>
+
+<script>
+    function dropdownmenu()
+    {
+        var x = document.getElementById("dropdownclick");
+
+        if (x.className == "topnav") 
+        {
+            x.className += " responsive";
+        }
+        else
+        {
+            x.className="topnav";
+        } 
+
+    }
+</script>
+</body>
+</html>

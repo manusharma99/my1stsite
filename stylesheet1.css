@@ -1,0 +1,321 @@
+/*####### defaults #######*/
+
+body
+{
+    margin:0;
+    line-height: 1;
+}
+
+.container
+{
+    display: block;
+    width: 100%;
+    margin: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.row
+{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width:100%;
+}
+
+.row ::after
+{
+    display: block;
+    clear: both;
+    content: "";
+}
+
+
+
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+
+*
+{
+    box-sizing: border-box;
+}
+/*####### nav bar #######*/
+
+
+nav
+{
+    width:100%;
+    margin:0;    
+}
+
+nav ul 
+{
+    list-style:none;
+    background-color: rgb(235, 246, 247);
+    margin:0;
+    padding: 0;
+    overflow: hidden;
+}
+
+ul.topnav li 
+{
+    text-align: center;
+    float: left;  
+}
+
+ul.topnav li.topnav_right 
+{
+    float: right;
+    text-align: center;
+}
+
+ul.topnav li a
+{
+     text-decoration:none;
+     min-height: 16x;
+     display: block;
+     margin: auto;
+     padding: 20px;
+     text-transform: uppercase;
+     color: black;
+}
+
+ul.topnav li a:hover 
+{
+    background-color: blue;
+    color: white;
+}
+
+ul.topnav li.dropdownicon
+{
+    display: none;
+    float: right;
+}
+
+/*######## custom style #######*/
+
+#section-1-gradient
+{
+    background:-webkit-linear-gradient(cadetblue,blue);
+}
+
+.leftside-col
+{
+    margin-left: 30%;
+    margin-top:10px;
+    margin-bottom:20px;
+}
+
+.rightside-col
+{
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+h1.large
+{
+    font-size: 50px;
+    margin:0;
+    color:white;
+}
+
+h1.section2header
+{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+form h2
+{
+    color:white;
+    font-size:25px; 
+    margin:10px;
+}
+
+input[type="text"]
+{
+    font-size: 16px;
+    width:200px;
+    min-width: 100px;
+    padding:8px;
+    border-radius: 7px;
+}
+ div.box
+{
+     padding: 36px 24px 40px 24px;
+     background: white;
+     box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.15),
+     0 2px 3px 0 rgba(0,0,0,0.1);
+     text-align: center;
+     margin: 21px;
+     border-radius: 7px;
+}
+
+div.icon
+{
+     width: 100%;
+}
+
+p
+{
+    line-height: 1.2;
+     font-size: 16px;
+}
+label
+{
+    font-size: 35px;
+    font-weight: 600;
+}
+button
+{
+    text-align: center;
+    display: block;
+    background: blue;
+    color: white;
+    font-size: 20px;
+    padding : 15px 40px;
+    border-radius: 7px;
+    font-weight: 700;
+}
+
+.more
+{
+    text-align: center;
+    margin: auto;
+}
+ article 
+ {
+     font-size: 20px;
+     font-weight: 200;
+ }
+
+ .col-5  
+ {
+     text-align: center
+ }
+
+ .col-5 img
+ {
+    -webkit-box-shadow: 5px 5px 10px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 10px 2px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 10px 2px rgba(0,0,0,0.75);
+    margin: 10px;
+ }
+
+ footer.footsy
+ {
+    background-color: cadetblue;
+    display: block;
+    margin: 0;
+ }
+
+ footer.footsy h1
+ {
+     font-size: 20px;
+     color: black;
+     padding-left: 25%;
+ }
+
+ footer.footsy ul 
+ {
+     padding-left: 0;
+     list-style: none;
+     padding-left: 25%;
+ }
+ footer.footsy ul li
+ {
+     color:black;
+     font-size:18;
+     line-height: 1.2;
+ }
+/*######## mobile ########*/
+
+@media screen and (max-width:680px)
+{
+    ul.topnav li:not(:nth-child(1))
+    {
+        display : none;
+    }
+
+    ul.topnav li.dropdownicon
+    {
+        display: block;
+        float: right;
+    }
+
+    ul.topnav.responsive li.dropdownicon 
+    {
+        position: absolute;
+        top:0;
+        right:0;
+    }
+
+    ul.topnav.responsive 
+    {
+        position: relative;
+    }
+
+    ul.topnav.responsive li
+    {
+        display: inline;
+        float: none;
+    }
+
+    ul.topnav.responsive li a
+    {
+        display:block;
+        text-align:left;
+    }
+
+    input[type="text"]
+    {
+        width: 416px;
+    }
+
+    .col-6,.col-4,.col-7,.col-5
+    {
+        width:100%;
+        margin:0;
+    }
+    
+    .col-3 mobilestack
+    {
+        display: block;
+        width: 25%;
+    }
+
+    .leftside-col,
+    .rightside-col
+    {
+        margin:15px;
+    }
+
+    .videocontainer iframe
+    {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        margin:0;
+    }
+
+    div.box
+    {
+        padding: 5px;
+        display:block;
+    }
+
+    .col-7
+    {
+        padding: 20px;
+    }
+}
